@@ -16,7 +16,7 @@ const app = async (yargsObj) => {
   }
 //----------------------------------------------------------------------------------------------------
   else if (yargsObj.update) {
-    await updateMovie({title: yargsObj.newTitle},{where:{title: yargsObj.title}});
+    await updateMovie({ title: yargsObj.title, newTitle: yargsObj.newTitle, actor: yargsObj.actor, newActor: yargsObj.newActor });
     //update a movie from db
   }
 //------------------------------------------------------------------------------------  ----------------
